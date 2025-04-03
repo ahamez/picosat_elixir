@@ -23,7 +23,7 @@ an expression which cannot be solved for is considered _unknown_.
 
 If satisfiable, the value returned is a list of the variable settings that satisfy all formulas.
 For example, the result `{:ok, [1, -2, -3, -4, 5]}` shows that there is a solution with variables
-`1` and `5` set to true, `2-4` set to false.
+`1` and `5` set to true, `2`, `3` and `4` set to false.
 
 An example of an unsatisfiable formula is `[[-1], [1]]` which states that variable `1` must always be true,
 and always be false at the same time, which is obviously impossible.
